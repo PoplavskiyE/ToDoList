@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/tasksList"
+        style="@style/Widget.AppCompat.ListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/addTask"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true" />
+
+    <Button
+        android:id="@+id/addTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addTask"
+        android:text="@string/addT"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:elevation="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="66dp"
+        android:layout_marginEnd="66dp" />
+
+</RelativeLayout>
